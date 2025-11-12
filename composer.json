@@ -1,0 +1,23 @@
+{
+  "name": "phpshift/phpshift",
+  "description": "Placeholder Composer plugin for PHPShift.",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "PHPShift",
+      "email": "irakli@phpshift.com"
+    }
+  ],
+  "require": {
+    "composer-plugin-api": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "phpshift\\phpshift\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "phpshift\\phpshift\\Plugin"
+  }
+}
