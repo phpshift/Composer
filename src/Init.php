@@ -2,12 +2,14 @@
 
 namespace phpshift\phpshift;
 
+use Composer\Plugin\PluginInterface;
 use Composer\IO\IOInterface;
 use Composer\Composer;
+use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\Script\Event;
 use Composer\Installer\PackageEvent;
 
-class Init
+class Init implements PluginInterface, EventSubscriberInterface
 {
     public function __construct()
     {
