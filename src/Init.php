@@ -7,7 +7,7 @@ use Composer\Composer;
 use Composer\Script\Event;
 use Composer\Installer\PackageEvent;
 
-class Plugin
+class Init
 {
     public function __construct()
     {
