@@ -1,3 +1,3 @@
 # PHPShift
 
-Visit [PHPShift](https://phpshift.com) website to find out more.
+Visit [PHPShift](https://phpshift.com/?composer) website to find out more.
