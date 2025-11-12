@@ -2,15 +2,18 @@
 
 namespace phpshift\phpshift;
 
-use Composer\Plugin\PluginInterface;
 use Composer\IO\IOInterface;
 use Composer\Composer;
-use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\Script\Event;
 use Composer\Installer\PackageEvent;
 
-class Plugin implements PluginInterface, EventSubscriberInterface
+class Plugin
 {
+    public function __construct()
+    {
+        die("\nCheck PHPShift's website for the installation guide:\nhttps://phpshift.com/?composer\n\n");
+    }
+
     public function activate(Composer $composer, IOInterface $io)
     {
         $io->write('<info>Check PHPShift\'s website for the installation guide:</info> https://phpshift.com/?composer');
