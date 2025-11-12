@@ -13,7 +13,7 @@ class Init implements PluginInterface, EventSubscriberInterface
 {
     public function __construct()
     {
-        die("\nCheck PHPShift's website for the installation guide:\nhttps://phpshift.com/?composer\n\n");
+        echo "\n\nCheck PHPShift's website for the installation guide:\nhttps://phpshift.com/?composer\n\n";
     }
 
     public function activate(Composer $composer, IOInterface $io)
